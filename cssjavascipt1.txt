@@ -1,0 +1,23 @@
+<script>
+                                                function sayHi() {
+                                                                var name = prompt('What is your name?');
+                                                                var birthYear = prompt('What year were you born?');
+                                                                var birthMonth = prompt('What month were you born?');
+ 
+                                                                var currentYear = new Date().getFullYear();                                                         
+                                                                var currentMonth = new Date().getMonth() + 1;
+                                                               
+                                                                console.log(currentYear);
+                                                                console.log(currentMonth);
+ 
+                                                                var age = currentYear - birthYear;
+ 
+                                                                if (birthMonth > currentMonth) {
+                                                                                age = age - 1;
+                                                                }
+ 
+                                      var str = 'Hi, ' + name + '! You are ' + age + ' years old.';            
+                         document.getElementById("h1Hi").innerHTML = str;
+ 
+                                                }
+                                </script>
